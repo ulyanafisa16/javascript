@@ -88,4 +88,31 @@ body.append(h1)
 const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
 
+const defaultText = 'Klik disini'
+btn1.textContent= defaultText
+
 btn1.style.border = 'none'
+btn1.style.padding = '7px'
+btn1.style.fontSize = '23px'
+btn1.style.background = 'red'
+btn2.style.background = 'orange'
+
+function Warna() {
+    btn1.style.background ='aqua'
+    const newText =document.createElement('p')
+    newText.textContent = "Hallo girl"
+    body.append(newText)
+}
+
+function ubahText() {
+    btn1.textContent ="you are beautiful"
+}
+
+function ori() {
+    btn1.textContent = defaultText
+}
+
+function ganti() {
+   btn2.style.background='yellow'
+   style.background.color='blue'(newText)
+}
