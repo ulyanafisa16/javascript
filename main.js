@@ -67,7 +67,25 @@
 // let hari = new Date().getDay()
 // alert(`hari ini adalah hari ${hari}`)
 
-let saldo1 = prompt ('Berapa saldo awal anda?')
-let saldo2 = prompt ('Berapa saldo terakhir anda?')
-let jumlah = saldo1 + saldo2
- alert ('jumlah saldo saya sebesar'+ jumlah);
+// let saldo1 = prompt ('Berapa saldo awal anda?')
+// let saldo2 = prompt ('Berapa saldo terakhir anda?')
+// let jumlah = saldo1 + saldo2
+//  alert ('jumlah saldo saya sebesar'+ jumlah);
+
+
+document.title = 'nafisa'
+const body = document.body
+body.append('WELCOME TO THE WORLD')
+const h1 = document.createElement('h1')
+h1.textContent = 'THE WORLD IS BEAUTIFUL'
+
+const namaSaya = document.createElement('p')
+namaSaya.innerHTML = '<marquee>ULYA NAFISA</marquee>'//tulisannya bergerak jalan
+
+body.append(namaSaya)
+body.append(h1)
+
+const btn1 = document.getElementById('btn1')
+const btn2 = document.getElementById('btn2')
+
+btn1.style.border = 'none'
