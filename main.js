@@ -67,8 +67,8 @@
 // let hari = new Date().getDay()
 // alert(`hari ini adalah hari ${hari}`)
 
-// let saldo1 = prompt ('Berapa saldo awal anda?')
-// let saldo2 = prompt ('Berapa saldo terakhir anda?')
+// let saldo1 = Number(prompt ('Berapa saldo awal anda?'))
+// let saldo2 = Number(prompt ('Berapa saldo terakhir anda?'))
 // let jumlah = saldo1 + saldo2
 //  alert ('jumlah saldo saya sebesar'+ jumlah);
 
@@ -80,7 +80,7 @@ const h1 = document.createElement('h1')
 h1.textContent = 'THE WORLD IS BEAUTIFUL'
 
 const namaSaya = document.createElement('p')
-namaSaya.innerHTML = '<marquee>ULYA NAFISA</marquee>'//tulisannya bergerak jalan
+namaSaya.innerHTML = '<marquee>ULYA NAFISATUSSANIYAH</marquee>'//tulisannya bergerak jalan
 
 body.append(namaSaya)
 body.append(h1)
@@ -116,3 +116,35 @@ function ganti() {
    btn2.style.background='yellow'
    style.background.color='blue'(newText)
 }
+
+
+//membuat array
+//dengan memanggil objek
+const myName = new Array ('kila','devan')
+console.log(myName)
+
+//untuk mengecek masuk dalam array atau tidak
+const arraySaya = ['alpukat','pisang','semangka']
+const semangka = arraySaya.includes('semangka')
+if (semangka) {
+const posisiSemangka = arraySaya.indexOf('semangka')
+const indexBefore = posisiSemangka - 1
+const before = arraySaya[indexBefore]
+console.log(`buah sebelum semangka adalah ${before}`)
+const awal = arraySaya.shift()
+console.log(`buah awal adalah buah ${awal}`)
+    
+}else{
+    console.log('saya tidak tahu posisinya dimana')
+}
+//benilai true krn semangka termasuk dalam arraysaya
+const arrayKamu = ['alpukat','pisang','semangka']
+const melon = arrayKamu.includes('melon')
+console.log(melon)
+//bernilai false krn melon gk termasuk dalam arraykamu
+
+ const arrayWe = ['nangka','labu','bayam','brokoli','tomato']
+ const newArrayWe = arrayWe.slice() //digunakan untuk mengcopy dg tanpa mengganti keoriginalnya
+ newArrayWe[0] = 'bawang'
+ console.log({arrayWe})
+ console.log({newArrayWe})
