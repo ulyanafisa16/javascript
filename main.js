@@ -50,7 +50,7 @@
 // const namaSiswa =['ulya', 'nafis', 'saniya', 'bia', 'vania']
 // console.log(namaSiswa.length) //untuk mengetahui panjang array
 // for (let i=0; i<= namaSiswa.length; i++) {
-//     console.log(namaSiswa[i])
+// console.log(namaSiswa[i])
 // }
 
 //while
@@ -76,14 +76,14 @@
 document.title = 'nafisa'
 const body = document.body
 body.append('WELCOME TO THE WORLD')
-const h1 = document.createElement('h1')
-h1.textContent = 'THE WORLD IS BEAUTIFUL'
+const p = document.createElement('p')
+p.textContent = 'THE WORLD IS BEAUTIFUL'
 
 const namaSaya = document.createElement('p')
 namaSaya.innerHTML = '<marquee>ULYA NAFISATUSSANIYAH</marquee>'//tulisannya bergerak jalan
 
 body.append(namaSaya)
-body.append(h1)
+body.append(p)
 
 const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
@@ -95,11 +95,11 @@ btn1.style.border = 'none'
 btn1.style.padding = '7px'
 btn1.style.fontSize = '23px'
 btn1.style.background = 'red'
-btn2.style.background = 'orange'
+
 
 function Warna() {
     btn1.style.background ='aqua'
-    const newText =document.createElement('p')
+    const newText = document.createElement('p')
     newText.textContent = "Hallo girl"
     body.append(newText)
 }
@@ -112,39 +112,71 @@ function ori() {
     btn1.textContent = defaultText
 }
 
-function ganti() {
-   btn2.style.background='yellow'
-   style.background.color='blue'(newText)
-}
 
 
 //membuat array
 //dengan memanggil objek
-const myName = new Array ('kila','devan')
-console.log(myName)
+// const myName = new Array ('kila','devan')
+// console.log(myName)
 
-//untuk mengecek masuk dalam array atau tidak
-const arraySaya = ['alpukat','pisang','semangka']
-const semangka = arraySaya.includes('semangka')
-if (semangka) {
-const posisiSemangka = arraySaya.indexOf('semangka')
-const indexBefore = posisiSemangka - 1
-const before = arraySaya[indexBefore]
-console.log(`buah sebelum semangka adalah ${before}`)
-const awal = arraySaya.shift()
-console.log(`buah awal adalah buah ${awal}`)
+// //untuk mengecek masuk dalam array atau tidak
+// const arraySaya = ['alpukat','pisang','semangka']
+// const semangka = arraySaya.includes('semangka')
+// if (semangka) {
+// const posisiSemangka = arraySaya.indexOf('semangka')
+// const indexBefore = posisiSemangka - 1
+// const before = arraySaya[indexBefore]
+// console.log(`buah sebelum semangka adalah ${before}`)
+// const awal = arraySaya.shift()
+// console.log(`buah awal adalah buah ${awal}`)
     
-}else{
-    console.log('saya tidak tahu posisinya dimana')
-}
-//benilai true krn semangka termasuk dalam arraysaya
-const arrayKamu = ['alpukat','pisang','semangka']
-const melon = arrayKamu.includes('melon')
-console.log(melon)
-//bernilai false krn melon gk termasuk dalam arraykamu
+// }else{
+//     console.log('saya tidak tahu posisinya dimana')
+// }
+// //benilai true krn semangka termasuk dalam arraysaya
+// const arrayKamu = ['alpukat','pisang','semangka']
+// const melon = arrayKamu.includes('melon')
+// console.log(melon)
+// //bernilai false krn melon gk termasuk dalam arraykamu
 
- const arrayWe = ['nangka','labu','bayam','brokoli','tomato']
- const newArrayWe = arrayWe.slice() //digunakan untuk mengcopy dg tanpa mengganti keoriginalnya
- newArrayWe[0] = 'bawang'
- console.log({arrayWe})
- console.log({newArrayWe})
+//  const arrayWe = ['nangka','labu','bayam','brokoli','tomato']
+//  const newArrayWe = arrayWe.slice() //digunakan untuk mengcopy dg tanpa mengganti keoriginalnya
+//  newArrayWe[0] = 'bawang'
+//  console.log({arrayWe})
+//  console.log({newArrayWe})
+
+ const arrayMe = ['ayam','sapi','kambing','domba','kuda']
+ const arrayf = ['katak','tupai','buaya','kudanil','belut']
+ const mergeArray = arrayMe.concat(arrayf)
+ mergeArray.map((value, index) => console.log(index, value))
+
+ //function
+ function addName(firstName, lastName) {
+    document.write('nama depan : ',firstName)+ "<br>"
+    document.write('nama belakang : ', lastName)
+ }
+ addName('ulya', 'saniyah')
+
+ const ulya = document.getElementById('ulya').innerHTML = 'selamat datang';
+
+ let a, b, c;
+ a = 7;
+ b = 8;
+ c = a+b;
+const demo = document.getElementById ('demo').innerHTML = c;
+
+
+const baru = document.createElement('p')
+    baru.textContent = "nikita" + '' + "" +"willi";
+    body.append(baru)
+
+
+ let text = "hay"
+text += " kamu"
+
+const yaya = document.getElementById('yaya').innerHTML = text;   
+
+ let coy = 12;
+coy -= 6
+
+const umm = document.getElementById('umm').innerHTML ="valuoe of" + coy;
