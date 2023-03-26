@@ -163,20 +163,24 @@ function ori() {
  a = 7;
  b = 8;
  c = a+b;
-const demo = document.getElementById ('demo').innerHTML = c;
+ demo = document.getElementById ('demo').innerHTML = c;
 
 
-const baru = document.createElement('p')
+ baru = document.createElement('p')
     baru.textContent = "nikita" + '' + "" +"willi";
     body.append(baru)
 
 
- let text = "hay"
-text += " kamu"
+//  let text = "hay"
+// text += " kamu"
 
-const yaya = document.getElementById('yaya').innerHTML = text;   
+// const yaya = document.getElementById('yaya').innerHTML = text;   
 
  let coy = 12;
 coy -= 6
 
-const umm = document.getElementById('umm').innerHTML ="valuoe of" + coy;
+ umm = document.getElementById('umm').innerHTML ="valuoe of : " + coy;
+
+
+let text = "please ulya datang ke rumahku ya!"
+ saya = document.getElementById('saya').innerHTML = text.search("rumahku");   
