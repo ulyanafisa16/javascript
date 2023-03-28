@@ -10,30 +10,30 @@
 //conditional statement
 let nama = 'ulya nafisa'
 let usia = 18
-let pacar = 1
+let pelajar = null
 
-if(pacar == null){
-    pacar = 'belum punya'
+if(pelajar == null){
+    pelajar = 'pelajar'
 } else {
- pacar ='sudah punya'
+ pelajar ='mahasiswa'
 }
 
-switch (pacar) {
+switch (pelajar) {
     case 1 :
-        pacar = 'punya pacar 1'
+        pelajar = 'pelajar 1'
         break
     case 2 :
-        pacar = 'punya pacar 2'
+        pelajar = 'mahasiswa 1'
         break
         default:
-            pacar = 'belum punya pacar'
+            pelajar = ' pelajar'
             break
 }
 
 let saldoA = 300000
 let saldoAkh = 200000
 let total = saldoA + saldoAkh
-alert(`Nama saya ${nama}  Usia saya ${usia} status saya ${pacar}`)
+alert(`Nama saya ${nama}  Usia saya ${usia} status saya ${pelajar}`)
 
 alert(`Saldo awal saya ${saldoA} dan Saldo akhir saya ${saldoAkh} jadi total saldo saya adalah ${total}`)
 
@@ -152,7 +152,7 @@ function ori() {
 
  //function
  function addName(firstName, lastName) {
-    document.write('nama depan : ',firstName)+ "<br>"
+    document.write('nama depan : ',firstName)+ "<br>" +
     document.write('nama belakang : ', lastName)
  }
  addName('ulya', 'saniyah')
