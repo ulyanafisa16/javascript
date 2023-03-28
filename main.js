@@ -67,9 +67,9 @@ alert(`Saldo awal saya ${saldoA} dan Saldo akhir saya ${saldoAkh} jadi total sal
 let hari = new Date().getDay()
 alert(`hari ini adalah hari ${hari}`)
 
-let saldo1 = Number(prompt ('Berapa saldo awal anda?'))
-let saldo2 = Number(prompt ('Berapa saldo terakhir anda?'))
-let jumlah = saldo1 + saldo2
+var saldo1 = Number(prompt ('Berapa saldo awal anda?'))
+var saldo2 = Number(prompt ('Berapa saldo terakhir anda?'))
+var jumlah = saldo1 + saldo2
  alert ('jumlah saldo saya sebesar'+ jumlah);
 
 
@@ -98,7 +98,7 @@ btn1.style.background = 'red'
 
 
 function Warna() {
-    btn1.style.background ='aqua'
+    btn1.style.background ='green'
     const newText = document.createElement('p')
     newText.textContent = "Hallo girl"
     body.append(newText)
