@@ -184,6 +184,7 @@ coy -= 6
 
 let text = "please ulya datang ke rumahku ya!"
  saya = document.getElementById('saya').innerHTML = text.search("rumahku");   
+ 
 
  setInterval(myFunction, 1000);
  function myFunction() {
