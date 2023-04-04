@@ -10,11 +10,23 @@
 <body>
     <div class="container">
         <nav>
-            <a href="/">HOME</a>
+           
+            <a href="#">HOME</a>
+            <a href="#">Contact</a>
             <a onclick="darkMode()">MODE</a>
+        
         </nav>
         <h1>SESI 1</h1> 
     </div>
- <script src="main.js"></script>  
+
+  <!--initializing function  -->
+  <script>
+    let body = document.body;
+    function darkMode() {
+        console.log('dark mode di klik')
+        body.classList.toggle("dark");
+    }
+
+  </script>
 </body>
 </html>
