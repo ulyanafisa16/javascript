@@ -8,25 +8,50 @@
     <title>webone</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
+    <nav>
            
-            <a href="#">HOME</a>
-            <a href="#">Contact</a>
-            <a onclick="darkMode()">MODE</a>
+        <a href="#">HOME</a>
+        <a href="#">Contact</a>
+        <a onclick="darkMode()">MODE</a>
+    
+    </nav>
+    <div class="container">
+        <div class="form-box">
+
+            <h1 id="title">sign up</h1>
+            <form>
+                <div classs="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Lost password <a href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+            </form>
         
-        </nav>
-        <h1>SESI 1</h1> 
+
+    </div>
     </div>
 
-  <!--initializing function  -->
-  <script>
-    let body = document.body;
-    function darkMode() {
-        console.log('dark mode di klik')
-        body.classList.toggle("dark");
-    }
 
+  <!--initializing function  -->
+  <script src="satu.js">
+
+   
   </script>
 </body>
 </html>
