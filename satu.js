@@ -1,3 +1,4 @@
+
 let body = document.body;
 function darkMode() {
     console.log('dark mode di klik')
@@ -23,3 +24,4 @@ title.innerHTML ="Sign Up";
 signupBtn.classList.remove("disable");
 signinBtn.classList.add("disable");
 }
+
