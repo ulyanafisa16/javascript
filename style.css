@@ -78,12 +78,14 @@ input{
 .input-field i {
     margin-left: 15px;
     color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form p {
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     height: 40px
+
 
 }
 
